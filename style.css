@@ -1,0 +1,347 @@
+/* Google Font CDN Link */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+
+}
+body{
+    overflow: hidden;
+}
+.hero-header{
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url("backgrount.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #5029bc;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.logo .logo-text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+nav .toggle{
+       width: 35px;
+       height: 35px;
+       position: absolute;
+       top: 45px;
+       right: 3%;
+       z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .toggle span{
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+nav .nlink{
+    list-style: none;
+}
+nav .nlink li{
+    display: inline-block;
+}
+nav .nlink li a {
+    color: #e5e5e5;
+    margin: 2.5rem;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+    background-image: url("backg.jpg");
+}
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #333333;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.hro-pic img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h5{
+    color: #e5e5e5;
+    font-size: 1.5rem;
+}
+.hero-text h5 span{
+    color: #007ced;
+    font-size: 25px;
+}
+.hero-text h1{
+    color: #007ced;
+    font-size: 3rem;
+}
+.hero-text p{
+    color: #e5e5e5;
+    font-size: 1.5rem;
+}
+.btn-group{
+    margin: 45px 0;
+}
+
+.btn-group .btn{
+    color: #fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 7px 5px 0;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px 8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+    border-color: #007ced;
+}
+.hero-text .social i {
+        color: #e5e5e5;
+        font-size: 30px;
+        margin-right: 10px;
+        transition: 0.5s;
+    }
+    .hero-text .social i.hover{
+        color: #007ced;
+        transform: rotate(360deg);
+    }
+
+    #skill-exp{
+        padding: 20px;
+        width: 100%;
+        min-height: 500px;
+    }
+    .experience{
+        display: flex;
+        width: 100%;
+        min-height: 100px;
+        padding-right: 30px;
+    }
+    .experience .content{
+        flex: 50%;
+    }
+    #skill-exp .experience h2{
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+    #skill-exp .experience p{
+        font-size: 20px !important;
+        margin-top: 10px;
+        color: black;
+    }
+    .experience .exp h2{
+        font-size: 2.5rem !important;
+        margin-bottom: 25px;
+    }
+    .experience .exp table{
+        width:100%;
+    }
+    .experience .exp tr{
+        border-top: 2px solid #000;
+        display: flex;
+        justify-content: start;
+        gap: 100px;
+        padding: 7px;
+    }
+    .experience .exp table p{
+        font-size: 15px !important;
+    }
+
+    /* Responsive design & displaying navbar for small screen */
+
+    @media(max-width: 930px)
+    {
+        nav .toggle{
+            display: initial;
+        }
+
+        /* For toggle button */
+        .click {
+            top: 45px;
+        }
+        .click span{
+            position: absolute;
+            margin-top: 12px;
+        }
+        .click span:first-child{
+            transform: rotate(-40deg);
+        }
+        .click span:nth-child(2)
+        {
+            opacity: 0;
+            margin:0;
+        }
+        .click span:last-child{
+            transform: rotate(45deg);
+            top: 0;
+        }
+        nav .nlink{
+            position: absolute;
+            top:110px;
+            right:-100%;
+            bottom: 0;
+            width: 60%;
+            height: 100vh;
+            background-color: #222;
+            z-index: 3;
+            box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+            transition: 0.5s;
+            padding: 25px 0;
+        }
+        nav .nlink li{
+            display: block;
+        }
+        nav .nlink li a{
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        nav .nlink.open{
+            right: 0;
+        }
+
+    }
+    @media(max-width: 768px) {
+        .container{
+            flex-direction: column;
+            padding-top: 2rem;
+        }
+        .hero-text{
+            padding: 40px 0;
+        }
+    }
+
+
+    /* -- About Section -- */
+    main {
+        margin: 0;
+        padding: 5px;
+        background-color: rebeccapurple;
+    }
+
+    main > h1, p, .browser {
+        margin: 10px;
+        padding: 5px;
+
+    }
+
+    .browser {
+        background: skyblue;
+    }
+    .browser > h2, p {
+        margin: 4px;
+        font-size: 90%;
+    }
+    .skill .skills-profile {
+        display: flex;
+        gap: 10px;
+    }
+    .skill h2{
+        font-size: 2rem;
+        border: 3px solid darkslateblue;
+        gap: 40px;
+        padding: 20px;
+
+    }
+    .skills h2 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        background-color: chocolate;
+    }
+    .skill .skills-profile .skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skill .skills-profile .skills .skill-box{
+        border: 2px solid black;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .skill .skills-profile .skills .skill-box:hover{
+        box-shadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.75);
+    }
+    .skill .skills-profile .skills .skill-box .icon{
+        background-color: orangered;
+        padding: 10px 11px;
+        border-radius: 50%;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill .skills-profile .skills .skill-box .icon i{
+        font-size: 15px;
+        color: #c8e8e9;
+        border-radius: revert;
+
+    }
+    .skill-box h4 {
+        font-weight: bold;
+        color: hotpink;
+        font-size: 1.5rem;
+    }
+    .skill .skills{
+        flex: 50%;
+        align-items: flex-end;
+
+    }
+    .skill .profile{
+        flex: 50%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+    }
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My PortFolio </title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font Awesome cdn font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div class="hero-header">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fs-solid fa-S">S</i>
+                <div class="logo-text">Sani Rathod</div>
+            </div>
+            <nav>
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nlink">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="SANIRESUME03.pdf">Resume</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="hero-pic">
+                <img src="profilepic33.jpg" alt="profile pic">
+            </div>
+            <div class="hero-text">
+                <h5>Hi I'm <span class="">Computer Engineer Student</span></h5>
+                <h1>Sani Rathod</h1>
+                <p>I'm the Student of Final Year Computer Engineering, I have 2 months of experience in Java Programming language and specialise in Java Programming and Web Technologies. I am open for new opportunities and interesting projects. </p>
+
+                <div class="btn-group">
+                    <a href="http://localhost:63342/portfolio/SANIRESUME03.pdf" class="btn active">Download CV</a>
+                    <a href="contact.html" class="btn">Contact</a>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sani-rathod-b2159422b">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/SaniRathod">
+                        <ion-icon name="logo-github"></ion-icon>
+                        <i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="https://www.facebook.com/sani.rathod.1291?mibextid=ZbWKwL">
+                        <ion-icon name="logo-github"></ion-icon>
+                        <i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    /** creating button click show hide navbar **/
+    let toggle = document.querySelector(".toggle");
+    let nav = document.querySelector(".nlink");
+    let skills = document.querySelector(".nlink li");
+
+    toggle.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+    </script>
+</body>
+</html>
